@@ -12,7 +12,7 @@
 7. **DOM Api**
 
 #### Task
-### Front:[link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/rslang/english-for-kids.md)
-### Back:[link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/rslang/english-for-kids-admin-panel.md)
+##### Front:[link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/rslang/english-for-kids.md)
+##### Back:[link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/rslang/english-for-kids-admin-panel.md)
 
 #### Sourse: The Rolling Scopes School. For more information: [link](https://rs.school/js/)
