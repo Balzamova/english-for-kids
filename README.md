@@ -6,7 +6,7 @@
 1. **Typescript**
 2. **CSS**
 3. **Webpack**
-4. **Backend server - Expressjs**
+4. **Backend server on NodeJS - Expressjs**
 5. **MongoDB**
 6. **REST API**
 7. **DOM Api**
