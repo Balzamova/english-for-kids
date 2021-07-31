@@ -1,0 +1,60 @@
+.switcher {
+  width: 120px;
+  height: 40px;
+  background: linear-gradient(75deg,var(--primary),var(--darkprimary));
+  border-radius: 5px;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.switch {
+  position: absolute;
+  left: 7px;
+
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left .5s linear;
+}
+
+.switcher:hover {
+  cursor: pointer;
+}
+
+.switch.active {
+  left: 75px;
+  transition: left .5s linear;
+}
+
+.switch::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid rgb(247, 240, 240);
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.switch__title {
+  position: absolute;
+  right: 10px;
+
+  font-size: 17px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: right .5s linear;
+}
+
+.switch__title.active {
+  right: 60px;
+  transition: right .5s linear;
+}

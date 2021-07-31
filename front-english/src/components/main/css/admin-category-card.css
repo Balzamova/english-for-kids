@@ -1,0 +1,130 @@
+.cat__remove.none,
+.cat__title.none,
+.cat__words.none,
+.cat__update.none,
+.cat__add.none,
+.cat__cancel.none,
+.cat__create.none,
+.update-label.none,
+.update-input.none {
+  display: none;
+}
+
+.cat__container,
+.create__container {
+  width: 361px;
+  height: 244px;
+  border: 1px solid #E5E5E5;
+  margin: 10px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+}
+
+.create-svg:hover {
+  cursor: pointer;
+  fill: var(--primary);
+}
+
+.cat__remove {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.cat__remove:before,
+.cat__remove:after {
+  content: '';
+  position: absolute;
+  top: calc(47%);
+  right: calc(2%);
+  width: 40px;
+  height: 4px;
+  background: rgba(53, 52, 52, 0.884);
+  transform: rotate(45deg);
+}
+
+.cat__remove:after {
+  transform: rotate(-45deg);
+}
+
+.cat__remove:hover {
+  cursor: pointer;
+  background: rgba(245, 19, 19, 0.884);
+}
+
+.cat__container > h2 {
+  text-transform: uppercase;
+}
+
+.cat__buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cat__update,
+.cat__add,
+.cat__cancel,
+.cat__create {
+  width: 144px;
+  height: 35px;
+  border: 2px solid #00BF82;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  background: transparent;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: #00BF82;
+}
+
+.cat__buttons > button:hover {
+  font-weight: bold;
+}
+
+.cat__cancel,
+.cat__create {
+  width: 140px;
+  height: 60px;
+  font-size: 27px;
+}
+
+.cat__cancel {
+  color: #f83c4b;
+}
+
+.update-label {
+  width: 100%;
+  font-size: 27px;
+  color: #3F51B5;
+}
+
+.update-input {
+  height: 50px;
+  padding: 5px 10px;
+  border-bottom: 3px solid #3F51B5;
+  font-size: 25px;
+}
+
+@media (max-width: 767px) {
+  .cat__container,
+  .create__container {
+    width: 300px;
+    padding: 40px 10px;
+  }
+}

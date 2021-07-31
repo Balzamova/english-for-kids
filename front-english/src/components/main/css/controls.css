@@ -1,0 +1,28 @@
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  background: linear-gradient(40deg, var(--darkprimary), var(--primary));
+
+  padding: 10px;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.repeat {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url(../../../icons/repeat.svg), linear-gradient(40deg, var(--primary), var(--darkprimary));
+  background-repeat: no-repeat;
+  background-size: 32px 32px,cover;
+  background-position: 50%;
+}

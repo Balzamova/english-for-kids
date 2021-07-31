@@ -1,0 +1,47 @@
+.loading {
+  z-index: 20;
+  position: absolute;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  color: var(--primary);
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  margin: 30px;
+  border-radius: 50%;
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    var(--primary) 0%,
+
+    var(--secondary) 100%);
+
+  animation: rotate 1s linear infinite;
+}
+
+.loader:after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+

@@ -1,0 +1,180 @@
+.page {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.container,
+.admin__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#endGamePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.success,
+.failure {
+  width: 500px;
+  height: 500px;
+  margin: 30px;
+  object-fit: cover;
+}
+
+.success {
+  background: url(../../../../public/img/success.jpg) center/contain no-repeat;
+}
+
+.failure {
+  background: url(../../../../public/img/failure.jpg) center/contain no-repeat;
+}
+
+.message {
+  font-size: 55px;
+  text-align: center;
+  color: rgba(241, 93, 7, 0.973);
+}
+
+#statisticsPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.create__btn,
+.card__add {
+  background: transparent;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 4px solid rgba(53, 52, 52, 0.884);
+  position: relative;
+}
+
+.create__btn:before,
+.create__btn:after,
+.card__add:before,
+.card__add:after {
+  content: '';
+  position: absolute;
+  top: calc(47%);
+  right: calc(18%);
+  width: 40px;
+  height: 5px;
+  background: rgba(53, 52, 52, 0.884);
+}
+
+.create__btn:after,
+.card__add:after {
+  transform: rotate(90deg);
+}
+
+.create__btn:hover,
+.card__add:hover {
+  cursor: pointer;
+  background: #00BF82;
+}
+
+#adminCard {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin__cards_title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin__back {
+  width: 280px;
+  height: 60px;
+  border: 2px solid #285748;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  background: transparent;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: rgba(245, 19, 19, 0.884);
+}
+
+.admin__back:hover {
+  background: rgba(245, 19, 19, 0.884);
+  color: #000;
+}
+
+.admin__container {
+  margin: 30px auto 20px;
+}
+
+@media (max-width: 992px) {
+  .page {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page {
+    padding: 0 20px;
+  }
+
+  .success,
+  .failure {
+    width: 300px;
+    height: 300px;
+    margin: 40px 0;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .success,
+  .failure {
+    width: 250px;
+    height: 250px;
+    margin: 40px 0;
+    object-fit: cover;
+  }
+
+  .message {
+    font-size: 35px;
+    color: rgba(241, 93, 7, 0.973);
+  }
+
+  #adminCard {
+    padding: 10px;
+  }
+}

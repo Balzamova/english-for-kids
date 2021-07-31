@@ -1,0 +1,241 @@
+.card__back.none,
+.card__front.none,
+.done__svg.none {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin__card,
+.newcard__create {
+  width: 360px;
+  height: 458px;
+  border: 1px solid #E5E5E5;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+  position: relative;
+}
+
+.card__front,
+.card__back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+  position: relative;
+}
+
+.newcard__create {
+  padding: 80px 30px 100px;
+  align-items: center;
+}
+
+.card__remove {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.card__remove:before,
+.card__remove:after {
+  content: '';
+  position: absolute;
+  top: calc(47%);
+  right: calc(2%);
+  width: 40px;
+  height: 4px;
+  background: rgba(53, 52, 52, 0.884);
+  transform: rotate(45deg);
+}
+
+.card__remove:after {
+  transform: rotate(-45deg);
+}
+
+.card__remove:hover {
+  cursor: pointer;
+  background: rgba(245, 19, 19, 0.884);
+}
+
+.admin__card_name {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+}
+
+.play__btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: url(../../../icons/play.svg) center/cover no-repeat;
+}
+
+.play__btn:hover {
+  cursor: pointer;
+  background: #00BF82 url(../../../icons/play.svg) center/cover no-repeat;
+}
+
+.play__btn:active {
+  cursor: pointer;
+  background: #f7d516 url(../../../icons/play.svg) center/cover no-repeat;
+}
+
+.admin__card_label {
+  width: 100%;
+  margin: 5px;
+  font-size: 25px;
+  color: #3F51B5;
+}
+
+.admin__card_label.load {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin__card_input,
+.admin__card_name > span {
+  width: 100%;
+  font-size: 28px;
+  color: #285748;
+  background: transparent;
+  padding: 10px;
+  border-bottom: 1px solid #285748;
+}
+
+.sound__text {
+  width: 100%;
+  height: 30px;
+  font-size: 28px;
+  color: #285748;
+  overflow: hidden;
+}
+
+.admin__card_name > span {
+  border-bottom: none;
+}
+
+.admin__card_input:disabled {
+  border-bottom: none;
+}
+
+.admin__card_input:focus {
+  border-bottom: 1px solid #00BF82;
+}
+
+.admin__card_load {
+  width: 150px;
+  height: 35px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  color: #00BF82;
+  border: 1px solid #00BF82;
+  border-radius: 5px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.admin__card_load > input[type="file"] {
+  display: none;
+}
+
+.admin__card_load:hover {
+  cursor: pointer;
+  color: #000;
+  background: #00BF82;
+}
+
+.admin__card_img {
+  width: 250px;
+  height: 150px;
+  margin: 5px 0;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.card__update,
+.card__cancel,
+.card__create {
+  width: 144px;
+  height: 35px;
+  border: 2px solid #285748;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  background: transparent;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #00BF82;
+}
+
+.card__cancel {
+  border: 2px solid rgba(245, 19, 19, 0.884);
+  color: rgba(245, 19, 19, 0.884);
+}
+
+.card__update:hover,
+.card__create:hover {
+  color: #000;
+  background: #00BF82;
+}
+
+.card__cancel:hover {
+  cursor: pointer;
+  color: #000;
+  background: rgba(245, 19, 19, 0.884);
+}
+
+.preview {
+  width: 140px;
+  height: 100px;
+  margin: 5px;
+  border-radius: 5px;
+  position: relative;
+  background: url(../../../../public/img/preview.png) center/contain no-repeat;
+}
+
+.loaded__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.done__svg {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 115px;
+  border-radius: 50%;
+  background: #00BF82 url(../../../icons/done.svg) center/contain no-repeat;
+}
+
+@media (max-width: 767px) {
+  .admin__card,
+  .card__create {
+    width: 300px;
+    padding: 40px 10px;
+  }
+}
