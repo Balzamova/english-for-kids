@@ -1,0 +1,16 @@
+.footer__link {
+  font-size: 25px;
+  color: var(--primary);
+}
+
+@media (max-width: 767px) {
+  .footer__list {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__link {
+    font-size: 21px;
+  }
+}

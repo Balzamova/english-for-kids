@@ -1,0 +1,132 @@
+.btns__statistics {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn__repeat,
+.btn__reset {
+  max-width: 300px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  background: linear-gradient(40deg, var(--darkprimary), var(--primary));
+
+  padding: 10px;
+  color: var(--darksecondary);
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.statistics__table {
+  width: 1150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.table__header,
+.table__item {
+  width: 100%;
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary);
+}
+
+.table__item {
+  background: #cdcdcd;
+  font-size: 18px;
+}
+
+.table__item:nth-child(even) {
+  background: #E8E6D1;
+}
+
+.table__header > th {
+  min-width: 165px;
+}
+
+.table__item > td {
+  color: var(--darksecondary);
+  font-size: 22px;
+  padding: 3px 0;
+  min-width: 165px;
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.table-btn {
+  color: var(--secondary);
+  font-size: 22px;
+  padding: 3px 5px;
+  width: 20%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.table-btn:hover {
+  cursor: pointer;
+}
+
+.arrow {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 3px 0;
+  background: url(../../../icons/arrow.svg) center/contain no-repeat;
+  transform: rotate(90deg);
+}
+
+.arrow.up {
+  transform: rotate(-90deg);
+}
+
+.arrow.none {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .statistics__table {
+    width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .statistics__table {
+    max-width: 740px;
+  }
+}
+
+@media (max-width: 767px) {
+  .statistics__table {
+    width: 470px;
+  }
+
+  .btns__statistics {
+    flex-direction: column;
+  }
+
+  .btn__repeat,
+  .btn__reset {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .statistics__table {
+    width: 300px;
+  }
+}
+

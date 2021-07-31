@@ -1,0 +1,41 @@
+{
+  "name": "english-for-kids",
+  "version": "1.0.0",
+  "description": "english-for-kids develop",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve --env development",
+    "lint": "eslint src",
+    "watch": "webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/balzamova-JSFE2021Q1.git"
+  },
+  "author": "Anastasiia Balzamova <balzam0401@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/balzamova-JSFE2021Q1/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/balzamova-JSFE2021Q1#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.0",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-webpack-plugin": "^2.5.4",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.4",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

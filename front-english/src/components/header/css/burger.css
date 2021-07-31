@@ -1,0 +1,60 @@
+.burger {
+  position: relative;
+  width: 70px;
+  height: 60px;
+  padding: 10px;
+  z-index: 3;
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+.burger:before,
+.burger:after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  left: 0;
+  background-color: #cdcdcd;
+  transition: all 0.5s ease-in-out 0.2s;
+}
+
+.burger:before {
+  top: 13px;
+  left: 10px;
+}
+
+.burger:after {
+  bottom: 13px;
+  left: 10px;
+}
+
+.burger__span {
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background: #cdcdcd;
+  top: 27px;
+  transition: all 0.5s ease-in-out 0.2s;
+}
+
+.burger.active:before {
+  transform: rotate(45deg);
+  top: 28px;
+  transition: all 0.5s ease-in-out 0.2s;
+  height: 4px;
+}
+
+.burger.active:after {
+  transform: rotate(-45deg);
+  bottom: 27px;
+  transition: all 0.5s ease-in-out 0.2s;
+  height: 4px;
+}
+
+.burger.active span {
+  transform: scale(0);
+  transition: all 0.5s ease-in-out 0.2s;
+}
