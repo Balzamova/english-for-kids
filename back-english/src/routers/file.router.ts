@@ -23,7 +23,7 @@ const cpUpload = upload.fields([
 const router = Router();
 
 router.post('/', cpUpload, async (req, res) => {
-  const filedata: File = req.files;
+  const filedata: any = req.files;
 
   if (!filedata) { return res.sendStatus(StatusCodes.BadRequest); }
 
