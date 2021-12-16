@@ -46,7 +46,7 @@ function start() {
             });
         }
         catch (e) {
-            console.log('Server Error', e.message);
+            console.log('Server Error', e);
             process.exit(1);
         }
     });
